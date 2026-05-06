@@ -4,4 +4,7 @@ project(Ajedrez)
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(Ajedrez main.cpp
-        main.cpp)
+        main.cpp
+        constantes.h
+        utilidades.h
+        utilidades.cpp)
