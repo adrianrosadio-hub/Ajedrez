@@ -1,25 +1,106 @@
 #include <iostream>
+using namespace std;
 
-// TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+void mostrarInstrucciones() {
+
+    int opcion;
+
+    do {
+
+        cout << "======= INSTRUCCIONES =======" << endl;
+        cout << "- Las blancan se mueven primero." << endl;
+        cout << "- El juego termina cuando un rey es capturado o un jugador se rinde." << endl;
+
+        cout << endl;
+        cout << "1. Volver al menu" << endl;
+        cout << "2. Salir del juego" << endl;
+
+        cout << "Seleccione una opcion: ";
+        cin >> opcion;
+
+        switch(opcion) {
+
+            case 1:
+                break;
+
+            case 2:
+                cout << "Gracias por jugar." << endl;
+                exit(0);
+            default:
+                cout << "Opcion no valida. Intente de nuevo." << endl;
+                cout << endl;
+
+        }
+
+    } while(opcion != 1);
+}
+void mostrarIntegrantes() {
+
+    cout << "======== INTEGRANTES ======" << endl;
+    cout << "Integrante 1-blancas : " << endl;
+    cout << "Integrante 2-blancas : " << endl;
+    cout << "Integrante 1-negras : " << endl;
+    cout << "Integrante 2-negras : " << endl;
+
+}
+void mostrarConsideraciones() {}
+void jugar() {}
+
+
+
+
 
 int main() {
-    // TIP Press <shortcut actionId="RenameElement"/> when your caret is at the <b>lang</b> variable name to see how CLion can help you rename it.
 
-    const auto lang = "C++";
-    std::cout << "hHello and welcome to " << lang << "!\n";
+    int opcion;
 
+    cout << "============================================" << endl;
+    cout << "         EL GAMBITO DE UTEC" << endl;
+    cout << "       Ajedrez en C++ - Terminal" << endl;
+    cout << "    CS1112 Programacion II - 2026-I" << endl;
+    cout << "============================================" << endl;
 
-    for (int i = 1; i <= 5; i++) {
-        // TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        std::cout << "AAAAAAAAAA = " << i << std::endl;
-        std::cout << "AAAAAAAAAA = " << i << std::endl;
-        std::cout << "AAAAAAAAAA = " << i << std::endl;
-        std::cout << "AAAAAAAAAA = " << i << std::endl;
-        std::cout << "AAAAAAAAAA = " << i << std::endl;
-        std::cout << "AAAAAAAAAee = " << i << std::endl;
-    }
-    std::cout<<"hola";
+    do {
+
+        cout << "====== MENU PRINCIPAL ======" << endl;
+        cout << "  0. Instrucciones" << endl;
+        cout << "  1. Integrantes" << endl;
+        cout << "  2. Consideraciones" << endl;
+        cout << "  3. Jugar" << endl;
+        cout << "  4. Salir" << endl;
+        cout << "============================" << endl;
+
+        cout << "Seleccione una opcion: ";
+        cin >> opcion;
+
+        switch(opcion) {
+
+            case 0:
+                mostrarInstrucciones();
+                break;
+
+            case 1:
+                mostrarIntegrantes();
+                break;
+
+            case 2:
+                mostrarConsideraciones();
+                break;
+
+            case 3:
+                jugar();
+                break;
+
+            case 4:
+                cout << "¡Hasta la proxima! Gracias por jugar El Gambito de UTEC." << endl;
+                break;
+
+            default:
+                cout << "Opcion no valida. Intente de nuevo." << endl;
+                break;
+        }
+
+    } while(opcion != 4);
 
     return 0;
-    // TIP See CLion help at <a href="https://www.jetbrains.com/help/clion/">jetbrains.com/help/clion/</a>. Also, you can try interactive lessons for CLion by selecting 'Help | Learn IDE Features' from the main menu.
 }
