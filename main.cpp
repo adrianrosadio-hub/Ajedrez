@@ -1,5 +1,9 @@
 #include <iostream>
 using namespace std;
+#include "tablero.h"
+
+#include "constantes.h"
+
 
 void mostrarInstrucciones() {
 
@@ -43,10 +47,19 @@ void mostrarIntegrantes() {
     cout << "Integrante 2-negras : " << endl;
 
 }
-void mostrarConsideraciones() {}
-void jugar() {}
+void mostrarConsideraciones() {
+    cout << "======== CONSIDERACIONES ======" << endl;
+}
+void jugar() {
+    char tablero[8][8];
 
 
+    inicializarTablero(tablero);
+
+
+
+    imprimirTablero(tablero);
+}
 
 
 
