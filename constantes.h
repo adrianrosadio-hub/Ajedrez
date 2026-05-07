@@ -15,4 +15,7 @@ const char REY_N = 'r';
 const char CABALLO_B = 'C';
 const char CABALLO_N = 'c';
 
+const int TURNO_BLANCAS = 0;
+const int TURNO_NEGRAS  = 1;
+
 #endif //AJEDREZ_CONSTANTES_H
