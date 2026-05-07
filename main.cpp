@@ -1,9 +1,18 @@
 #include <iostream>
 using namespace std;
 #include "tablero.h"
-
 #include "constantes.h"
+#include "piezas_avanzadas.h"
 
+
+// Flags para validar el enroque:
+bool reyBlancoMovido   = false;
+bool reyNegroMovido    = false;
+bool torreBlancoA_Mov  = false;
+bool torreBlancoH_Mov  = false;
+bool torreNegroA_Mov   = false;
+bool torreNegroH_Mov   = false;
+// fin de los flags
 
 void mostrarInstrucciones() {
 
