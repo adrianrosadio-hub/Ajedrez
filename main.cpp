@@ -83,7 +83,7 @@ void jugar() {
             string ganador= (turno == TURNO_BLANCAS) ? jugador2 : jugador1;
             string colorGanador = (turno == TURNO_BLANCAS) ? "NEGRAS" : "BLANCAS";
             cout << nombreTurno << " se rindio." << endl;
-            cout << "GANADOR: " << ganador << " (PIEZAS " << colorGanador << ")" << endl;
+            cout << "GANADOR: " << ganador << "-(PIEZAS " << colorGanador << ")" << endl;
             cout << "------ FIN DEL JUEGO ------" << endl;
             cout << endl;
             juegoActivo = false;
