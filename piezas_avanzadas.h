@@ -1,0 +1,8 @@
+//
+// Created by 3scar on 7/05/2026.
+//
+
+#ifndef AJEDREZ_PIEZAS_AVANZADAS_H
+#define AJEDREZ_PIEZAS_AVANZADAS_H
+
+#endif //AJEDREZ_PIEZAS_AVANZADAS_H
