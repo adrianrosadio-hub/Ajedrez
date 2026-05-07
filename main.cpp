@@ -52,11 +52,13 @@ void mostrarConsideraciones() {
 }
 void jugar() {
     char tablero[8][8];
-
+    string jugador1;
+    string jugador2;
 
     inicializarTablero(tablero);
 
-
+    cout << "Jugador 1: " << jugador1 << endl;
+    cout << "Jugador 2: " << jugador2 << endl;
 
     imprimirTablero(tablero);
 }
