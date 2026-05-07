@@ -12,7 +12,7 @@ void mostrarInstrucciones() {
     do {
 
         cout << "======= INSTRUCCIONES =======" << endl;
-        cout << "- Las blancan se mueven primero." << endl;
+        cout << "- Las blancas se mueven primero." << endl;
         cout << "- El juego termina cuando un rey es capturado o un jugador se rinde." << endl;
 
         cout << endl;
