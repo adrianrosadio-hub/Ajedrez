@@ -53,7 +53,6 @@ void mostrarConsideraciones() {
 void jugar() {
     char tablero[8][8];
     string jugador1;
-
     string jugador2;
 
     int turno = TURNO_BLANCAS;
