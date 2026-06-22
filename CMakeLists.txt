@@ -10,4 +10,8 @@ add_executable(Ajedrez
         utilidades.cpp
         tablero.cpp
         tablero.h
+        piezas_avanzadas.h
+        piezas_avanzadas.cpp
+        piezas_basicas.cpp
+        piezas_basicas.h
 )
